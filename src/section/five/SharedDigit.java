@@ -5,8 +5,6 @@ public class SharedDigit {
         System.out.println(hasSharedDigit(12, 23));
         System.out.println(hasSharedDigit(9, 99));
         System.out.println(hasSharedDigit(15, 55));
-        System.out.println(hasSharedDigit(12, 43));
-        System.out.println(hasSharedDigit(12, 13));
     }
 
     public static boolean hasSharedDigit(int firstNumber, int secondNumber) {
