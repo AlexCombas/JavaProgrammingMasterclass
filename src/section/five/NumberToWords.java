@@ -2,10 +2,11 @@ package section.five;
 
 public class NumberToWords {
     public static void main(String[] args) {
-        numberToWords(1234);
-        numberToWords(-222);
+        numberToWords(100);
     }
 
+    // print out words for number 1234 -> one two three four
+    // Do  not accept negative values, but do accept zero.
     public static void numberToWords(int number) {
         if (number < 0){
             System.out.println("Invalid Value");
@@ -51,6 +52,7 @@ public class NumberToWords {
         }
     }
 
+    // return the number of the digits in the number 1235 -> 4
     public static int getDigitCount(int number) {
         if (number == 0) {
             return 1;
@@ -66,6 +68,7 @@ public class NumberToWords {
         return digits;
     }
 
+    // reverse the input number 1234 -> 4321
     public static int reverse(int number) {
         boolean negative = false;
         if (number < 0) {
