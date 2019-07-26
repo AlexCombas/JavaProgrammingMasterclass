@@ -24,7 +24,7 @@ public class MinMaxChallenge {
 
                if (temp < min || min == 0) {
                    min = temp;
-               } else if (temp > max || max == 0) {
+               } else if (temp > max) {
                    max = temp;
                }
 
