@@ -11,7 +11,7 @@ public class MinMaxChallenge {
         int temp = 0;
         boolean hasNext;
         while (true) {
-            System.out.print("Enter number: ");
+            System.out.print("2Enter number: ");
             hasNext = scanner.hasNextInt();
             if (hasNext) {
                temp = scanner.nextInt();
@@ -28,8 +28,12 @@ public class MinMaxChallenge {
                    max = temp;
                }
 
+            } else {
+                System.out.println("Error: Invalid Integer");
+                break;
             }
         }
+        scanner.close();
 
 
 
