@@ -7,9 +7,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class VipCustomerTest {
 
     @Test
-    void testValidCustomer() {
+    void testValidCustomerName() {
         VipCustomer customer = new VipCustomer("Alex", 1000, "alex@flyingcastle.net");
         assertEquals("Alex", customer.getName());
     }
-
 }
