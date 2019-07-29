@@ -24,4 +24,6 @@ public class Bedroom {
     public void setNumberOfBeds(int numberOfBeds) {
         this.numberOfBeds = numberOfBeds;
     }
+
+
 }

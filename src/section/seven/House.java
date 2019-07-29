@@ -15,5 +15,11 @@ public class House {
         this.kitchens = kitchens;
     }
 
+    public Bedroom getBedrooms(){
+        return bedrooms;
+    }
 
+    public Bathroom getBathrooms(){
+        return bathrooms;
+    }
 }
