@@ -4,6 +4,7 @@ import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SortDescending {
@@ -55,16 +56,17 @@ public class SortDescending {
     @Contract("_ -> param1")
     private static int[] sortIntegers(@NotNull int[] myArray) {
         int temp = 0;
-        for (int i = 0; i < myArray.length; i++) {
-            for (int j = 0; j < myArray.length; j++) {
-                if (myArray[i] < myArray[j]) {
-                    temp = myArray[i];
-                    myArray[i] = myArray[j];
-                    myArray[j] = temp;
+        int [] sortedArray = Arrays.copyOf(myArray, myArray.length);
+        for (int i = 0; i < sortedArray.length; i++) {
+            for (int j = 0; j < sortedArray.length; j++) {
+                if (sortedArray[i] > sortedArray[j]) {
+                    temp = sortedArray[i];
+                    sortedArray[i] = sortedArray[j];
+                    sortedArray[j] = temp;
                 }
 
             }
         }
-        return myArray;
+        return sortedArray;
     }
 }
