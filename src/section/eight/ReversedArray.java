@@ -11,7 +11,7 @@ public class ReversedArray {
         printReversedArray(array);
     }
 
-    static void printReversedArray(int[] array) {
+    private static void printReversedArray(int[] array) {
         int temp;
         for (int i = 0; i < array.length / 2; i++) {
             temp = array[i];
@@ -21,7 +21,7 @@ public class ReversedArray {
         printArray(array);
     }
 
-    static void printArray(int[] array){
+    private static void printArray(int[] array){
         System.out.println(Arrays.toString(array));
     }
 }

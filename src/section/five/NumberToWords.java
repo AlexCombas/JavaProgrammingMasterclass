@@ -5,10 +5,10 @@ public class NumberToWords {
         numberToWords(100);
     }
 
-    // print out words for number 1234 -> one two three four
-    // Do  not accept negative values, but do accept zero.
+//     print out words for number 1234 -> one two three four
+//     Do  not accept negative values, but do accept zero.
     public static void numberToWords(int number) {
-        if (number < 0){
+        if (number < 0) {
             System.out.println("Invalid Value");
         }
         int sum = reverse(number);
